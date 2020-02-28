@@ -10,4 +10,5 @@ export class AppComponent {
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   PI = Math.PI;
   porcentaje: number = 0.235;
+  salario : number = 12345.5;
 }
