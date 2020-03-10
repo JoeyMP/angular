@@ -140,5 +140,19 @@
         </pre>
       </div>
     </div>
+
+    <h4>Dom Seguro</h4>
+    <hr>
+    <div class="row mb-5">
+      <div class="col">
+        <iframe width="560" 
+                height="315" 
+                [src]="videoUrl | domSeguro" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </div>
 </div>
