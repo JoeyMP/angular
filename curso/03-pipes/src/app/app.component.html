@@ -122,6 +122,16 @@
           </td>
           <td>{{fecha | date:'MMMM - dd':'':idioma}}</td>
         </tr>
+        <tr>
+          <td>{{nombre}}</td>
+          <td>contrasena : {{hideText}}
+            <br>
+            <button class="btn btn-outline-primary" (click) = 'hideText = !hideText'>
+              Activar/Desactivar
+            </button>
+          </td>
+          <td>{{nombre | hideText:hideText}}</td>
+        </tr>
       </tbody>
     </table>
 
