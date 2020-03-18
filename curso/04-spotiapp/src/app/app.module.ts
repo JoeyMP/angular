@@ -13,6 +13,7 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { NoimagesPipe } from './pipes/noimages.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 
 //services
@@ -25,7 +26,8 @@ import { NoimagesPipe } from './pipes/noimages.pipe';
     NavbarComponent,
     ArtistaComponent,
     NoimagesPipe,
-    TarjetasComponent
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
