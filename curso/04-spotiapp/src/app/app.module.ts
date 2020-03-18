@@ -11,6 +11,7 @@ import { ArtistaComponent } from './components/artista/artista.component';
 //importar rutas
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
+import { NoimagesPipe } from './pipes/noimages.pipe';
 
 //services
 
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    ArtistaComponent
+    ArtistaComponent,
+    NoimagesPipe
   ],
   imports: [
     BrowserModule,
