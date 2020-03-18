@@ -12,8 +12,10 @@ export class SearchComponent {
   constructor(private spotifyService: SpotifyService) {}
 
   search(termino: string) {
-    this.spotifyService.getArtist(termino).subscribe((data: any) => {
-      this.artist = data;
-    });
+    if(termino.length >0){
+      this.spotifyService.getArtist(termino).subscribe((data: any) => {
+        this.artist = data;
+      });
+    }
   }
 }
