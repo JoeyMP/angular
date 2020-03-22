@@ -8,9 +8,11 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./artist.component.css"]
 })
 export class ArtistComponent {
+
   artist: any = {};
   topTracks: any[] = [];
   loadingArtist: boolean;
+
   constructor(
     private activateRoute: ActivatedRoute,
     private spotifyService: SpotifyService
