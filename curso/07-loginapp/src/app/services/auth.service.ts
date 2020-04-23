@@ -67,7 +67,7 @@ export class AuthService {
     let hoy= new Date();
     hoy.setSeconds(120);
 
-    localStorage.setItem('expira', hoy.getTime().toString());
+    localStorage.setItem('expirationTime', hoy.getTime().toString());
   }
 
   leerToken(){
@@ -86,10 +86,10 @@ export class AuthService {
       return false;
     }
 
-    const expira = Number(localStorage.getItem('expira'));
+    const expirationTime = Number(localStorage.getItem('expirationTime'));
     const expiraDate = new Date();
-    expiraDate.setTime(expira);
-    
+    expiraDate.setTime(expirationTime);
+
     if(expiraDate > new Date()){
       return true;
     }else{
